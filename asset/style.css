@@ -16,7 +16,7 @@ h1 {
     padding: .5rem 4rem 0;
     text-align: center;
     color: #FFF;
-    background: linear-gradient(-30deg, #ffdddd 0%, #ff7700 30%, #ff7700 70%, #ffdddd 100%);
+    background: linear-gradient(-30deg, #ddffdd 0%, #00dd33 35%, #00dd33 65%, #ddffdd 100%);
     box-shadow: 2px 2px 2px #333333;
 }
 
