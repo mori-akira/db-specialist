@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>データベーススペシャリスト試験</title>
+    <meta name="author" content="Moriaki Kogure" />
+    <link rel="stylesheet" href="./asset/style.css" />
+    <link rel="icon" href="favicon.ico" />
+  </head>
+
+  <body>
+    <h1>データベーススペシャリスト試験</h1>
+
+    <h4>資格概要</h4>
+    <blockquote>
+      <a href="https://www.ipa.go.jp/shiken/kubun/db.html" target="_blank"
+        >データベーススペシャリスト試験</a
+      >
+    </blockquote>
+
+    <h4>学習進捗</h4>
+    <div>
+      <span id="practice-progress"></span>
+      <button id="reset-btn">進捗リセット</button>
+    </div>
+
+    <h4>
+      <span>コンテンツ</span>
+      <div class="toggle-box-wrapper">
+        <input
+          type="checkbox"
+          class="toggle-box"
+          id="toggle-show-complete-content"
+        />
+        <label for="toggle-show-complete-content" class="toggle-box-label"
+          >学習済みコンテンツを表示</label
+        >
+      </div>
+    </h4>
+    <div id="page-tree"></div>
+
+    <h2>ウィンドウ関数関連</h2>
+
+    <h3>ウィンドウ関数で使える関数</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>関数</th>
+          <th>概要</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><m-b>AVG(カラム名)</m-b></td>
+          <td>平均値を取得する</td>
+        </tr>
+        <tr>
+          <td><m-b>MAX(カラム名)</m-b></td>
+          <td>最大値を取得する</td>
+        </tr>
+        <tr>
+          <td><m-b>MIN(カラム名)</m-b></td>
+          <td>最小値を取得する</td>
+        </tr>
+        <tr>
+          <td><m-b>SUM(カラム名)</m-b></td>
+          <td>合計値を取得する</td>
+        </tr>
+        <tr>
+          <td><m-b>COUNT(カラム名)</m-b></td>
+          <td>行数を取得する</td>
+        </tr>
+        <tr>
+          <td><m-b>ROW_NUMBER()</m-b></td>
+          <td>1からの行番号を取得する</td>
+        </tr>
+        <tr>
+          <td><m-b>LAG(カラム名 [, n])</m-b></td>
+          <td>n行前のカラム値を取得する</td>
+        </tr>
+        <tr>
+          <td><m-b>LEAD(カラム名 [, n])</m-b></td>
+          <td>n行後のカラム値を取得する</td>
+        </tr>
+        <tr>
+          <td><m-b>RANK()</m-b></td>
+          <td>順位付けをする(同じ順位を飛び番にする)</td>
+        </tr>
+        <tr>
+          <td><m-b>DENSE_RANK()</m-b></td>
+          <td>順位付けをする(同じ順位を飛び番にしない)</td>
+        </tr>
+        <tr>
+          <td><m-b>PERCENT_RANK()</m-b></td>
+          <td>相対的な位置を求める。パーセントランク値(0&lt;値≦1)</td>
+        </tr>
+        <tr>
+          <td><m-b>CUME_DIST()</m-b></td>
+          <td>相対的な位置を求める。累積分布(0&lt;値≦1)</td>
+        </tr>
+        <tr>
+          <td><m-b>NTILE(n)</m-b></td>
+          <td>n分割し、その分割した集合に順位付けする</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/dexie/4.0.8/dexie.min.js"
+      integrity="sha512-Yp2Q03YGorJ+zy5dF6XnTwmtW9MOnJwCG15PH50C5FZcw9TaUHP3ZeSNNkkpjMUD6gOCGyWTLJRkTNjrik9oDA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./asset/script.js"></script>
+  </body>
+</html>
